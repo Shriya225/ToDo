@@ -1,13 +1,18 @@
 import ToDO_item from "./todo_item";
 import { memo } from "react";
+import TaskStatus from "./ToDo_status";
 
-const Todo_list=memo(({tasks})=>{
+const Todo_list=memo(({tasks,handleDel})=>{
     console.log("List being renderd...");
+    const opts=["ToDo","Doing","Completed"];
     
     return(
-        <div style={{border:"2px solid blue"}}>
-        <h1>ToDO tasks</h1>
-        <ToDO_item tasks={tasks}/>
+        <div >
+     
+        <div className="d-flex flex-column flex-sm-row gap-4 mt-5">
+            {opts.map(e=><TaskStatus status={e} tasks_related={tasks.filter(task=>task.status===e)} handleDel={handleDel}/>)}
+
+        </div>
         </div>
     );
 });
