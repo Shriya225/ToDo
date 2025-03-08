@@ -9,7 +9,7 @@ function ToDo(){
     const [tasks,setTasks]=useState(JSON.parse(oldTasks) || []);
     const [input,setInput]=useState("");
     const [select,SetSelect]=useState("ToDo");
-    console.log("parent being renderd...");
+
 
     useEffect(()=>{
       localStorage.setItem("tasks",JSON.stringify(tasks))
@@ -45,12 +45,7 @@ function ToDo(){
           <option value="Doing">Doing</option>
           <option value="Completed">Completed</option>
         </select>
-        {/* <h1>{select} is selcted</h1> */}
         <button onClick={AddTasks} className="btn btn-primary w-10 ">Add</button>
-          
-          {/* <p>the input u eneerd is...{input}</p> */}
-          {/* <h1>input : {input}</h1> */}
-
           </div>
        
         {tasks.map((e) => {console.log(e);

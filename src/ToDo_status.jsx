@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ToDo_item from "./todo_item";
 
 function TaskStatus({status,tasks_related,handleDel}){
