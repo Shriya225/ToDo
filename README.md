@@ -8,7 +8,8 @@
 - 💾 Saves tasks in **Local Storage**  
 - 🎨 Responsive UI with **Bootstrap**  
 - ⚡ Built with **Vite** for faster performance  
-- 🌍 Deployed on **Vercel** & **GitHub Pages**  
+- 🌍 Deployed on **Vercel**  
 
-
+## **Live Demo**  
+🔗 **[To-Do App](https://to-do-shriya-palles-projects.vercel.app/)**  
 
